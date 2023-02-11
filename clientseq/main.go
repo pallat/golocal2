@@ -25,7 +25,7 @@ func main() {
 var ErrNotOK = errors.New("status is not OK")
 
 func service(n int) error {
-	resp, err := http.Get(fmt.Sprintf("http://localhost:8080/%d", n))
+	resp, err := http.Get(fmt.Sprintf("http://localhost:8081/%d", n))
 	if err != nil {
 		return err
 	}
